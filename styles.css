@@ -1,0 +1,196 @@
+/* Tipografia */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* Estilo geral */
+header {
+    background-color: #003f5c;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+/* Estilos de imagem */
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.carousel figure {
+    width: 32%;
+    text-align: center;
+}
+
+.carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Modal */
+.modal {
+    display: block;
+    position: relative;
+    margin-top: 20px;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.modal img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+/* Estilo de Links */
+a {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Rodapé */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Estilos de formulário de contato */
+.fale-conosco ul {
+    list-style: none;
+    padding: 0;
+}
+
+.fale-conosco ul li {
+    margin-bottom: 10px;
+}
+
+/* Estilos de animação e transições */
+.section-hidden {
+    opacity: 0;
+    transform: translateY(30px); /* Começa deslocado para baixo */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Quando a seção entra em foco */
+.section-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilos de imagens para animação */
+.imagens figure {
+    opacity: 0;
+    transform: translateX(50px); /* Começa deslocado para a direita */
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+/* Quando as imagens ficam visíveis */
+.imagens figure.visible {
+    opacity: 1; /* Imagem se torna visível */
+    transform: translateX(0); /* Imagem move para a posição original */
+}
+
+/* Centralizando o infográfico */
+.infografico {
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.infografico img {
+    max-width: 30%; /* Ajuste a largura máxima da imagem */
+    height: auto; /* Mantém a proporção da altura */
+    border-radius: 8px; /* Adiciona borda arredondada, se desejar */
+}
+
+/* Botões com suavidade no hover */
+button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Aumenta um pouco o tamanho ao passar o mouse */
+}
+
+/* Animação geral para fade-in do conteúdo */
+body {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+
+body.loaded {
+    opacity: 1;
+}
+
+/* Suavizando o hover nos links */
+nav ul li a,
+.modal-btn {
+    transition: all 0.3s ease; /* Suaviza todas as propriedades no hover */
+}
+
+nav ul li a:hover,
+.modal-btn:hover {
+    color: #0056b3; /* Alterando a cor no hover */
+    text-decoration: underline; /* Colocando o sublinhado */
+}
